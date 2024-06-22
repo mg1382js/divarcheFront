@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>profile</title>
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../css/profile.css">
+    <link rel="icon" type="image/x-icon" href="../../../image/logo.jpg">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-xl-8">
+            <div class="card">
+                <div class="card-body pb-0">
+                    <div class="row align-items-center">
+                        <div class="col-md-3">
+                            <div class="text-center border-end">
+                                <h4 class="text-primary font-size-20 mt-3 mb-2" id="profileFullName"></h4>
+                            </div>
+                        </div><!-- end col -->
+                        <div class="col-md-9">
+                            <div class="ms-3">
+                                <div>
+                                    <h4 class="card-title mb-2">مشخصات</h4>
+                                </div>
+                                <div class="row my-4">
+                                    <div class="col-md-12">
+                                        <div>
+                                            <p class="text-muted mb-2 fw-medium" id="profileUserName"><i
+                                                    class="mdi mdi-email-outline me-2"></i>
+                                            </p>
+                                            <p class="text-muted fw-medium mb-0" id="profilePhoneNumber"><i
+                                                    class="mdi mdi-phone-in-talk-outline me-2"></i>
+                                            </p>
+                                        </div>
+                                    </div><!-- end col -->
+                                </div><!-- end row -->
+                            </div>
+                        </div><!-- end col -->
+                    </div><!-- end row -->
+                </div><!-- end card body -->
+            </div><!-- end card -->
+
+            <div class="card">
+                <div class="tab-content p-4">
+
+
+                    <div class="tab-pane active show" id="tasks-tab" role="tabpanel">
+                        <h4 class="card-title mb-4"> آگهی های من</h4>
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="task-list-box" id="landing-task">
+                                    <div id="task-item-1">
+                                        <div class="card task-box rounded-3">
+                                            <div class="card-body">
+                                                <div class="row align-items-center">
+                                                    <div class="col-xl-6 col-sm-5">
+
+                                                    </div><!-- end col -->
+                                                    <div class="col-xl-6 col-sm-7">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-xl-5 col-md-6 col-sm-5">
+                                                                <!-- end avatar group -->
+                                                            </div><!-- end col -->
+                                                            <div class="col-xl-7 col-md-6 col-sm-7">
+                                                                <div class="d-flex flex-wrap gap-3 mt-3 mt-xl-0 justify-content-md-end">
+                                                                    <div>
+                                                                        delete
+                                                                    </div>
+                                                                </div>
+                                                            </div><!-- end col -->
+                                                        </div><!-- end row -->
+                                                    </div><!-- end col -->
+                                                </div><!-- end row -->
+                                            </div><!-- end cardbody -->
+                                        </div><!-- end card -->
+                                    </div>
+                                </div><!-- end -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+                    </div><!-- end tab pane -->
+                </div>
+            </div><!-- end card -->
+        </div>
+        <div class="col-xl-4">
+            <div class="card">
+                <div class="card-body pb-0">
+                    <div class="row align-items-center">
+                        <div class="col-md-3">
+                            <div class="text-center border-end">
+                                <h4 class="text-primary font-size-20 mt-3 mb-2" id="profileFullName"></h4>
+                            </div>
+                        </div><!-- end col -->
+                        <div class="col-md-9">
+                            <div class="ms-3">
+                                <div>
+                                    <h4 class="card-title mb-2">ثبت آگهی</h4>
+                                </div>
+                                <div class="row my-4">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="form-outline form-white mb-4">
+                                                <label class="form-label" for="title">title</label>
+                                                <input type="text" id="title" class="form-control form-control-lg"/>
+                                            </div>
+                                            <div class="form-outline form-white mb-4">
+                                                <label class="form-label" for="description">description</label>
+                                                <input type="text" id="description"
+                                                       class="form-control form-control-lg"/>
+                                            </div>
+                                            <div  class="form-outline form-white mb-4">
+                                                <label class="form-label" for="price">price</label>
+                                                <input type="text" id="price" class="form-control form-control-lg"/>
+                                            </div>
+                                            <div  class="form-outline form-white mb-4">
+                                                <label class="form-label" for="address">address</label>
+                                                <input type="text" id="address" class="form-control form-control-lg"/>
+                                            </div>
+                                            <div  class="form-outline form-white mb-4">
+                                                <label class="form-label" for="status">status</label>
+                                                <input type="text" id="status" class="form-control form-control-lg"/>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="formFileMultiple" class="form-label">upload images</label>
+                                                <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                            </div>
+                                            <select id="categoryChoose" class="form-control">
+                                                <option selected>choose category</option>
+                                                <option value="1">سواری و وانت</option>
+                                                <option value="2">سنگین</option>
+                                                <option value="3">موتور سیکلت</option>
+                                                <option value="4">قطعات یدکی</option>
+                                                <option value="5">اجاره ای</option>
+                                                <option value="6">موبایل</option>
+                                                <option value="7">تبلت</option>
+                                                <option value="8">رایانه رومیزی</option>
+                                                <option value="9">لپ تاپ</option>
+                                                <option value="10">ایرپاد</option>
+                                                <option value="11"> لوازم جانبی</option>
+                                                <option value="12">کنسول بازی</option>
+                                                <option value="13">صوتی و تصویری</option>
+                                                <option value="14">لوازم خانگی برقی</option>
+                                                <option value="15">ظروف و لوازم آشپزخانه</option>
+                                                <option value="16">خوردنی و آشامیدنی</option>
+                                                <option value="17">خیاطی و بافتنی</option>
+                                                <option value="18">مبلمان و صنایع چوت</option>
+                                                <option value="19">نور و روشنایی</option>
+                                                <option value="20">فرش و موکت</option>
+                                                <option value="21">تشک و روتختی</option>
+                                                <option value="22">دکور و تزئینی</option>
+                                                <option value="23">سرمایشی و گرمایشی</option>
+                                                <option value="24">شستشو و نظافت</option>
+                                                <option value="25">موتور و ماشین</option>
+                                            </select>
+                                            <button type="button" class="btn btn-primary" id="create">create</button>
+
+                                        </div>
+                                    </div>
+                                </div><!-- end col -->
+                            </div><!-- end row -->
+                        </div>
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end card body -->
+        </div><!-- end card --></div>
+
+</div>
+</div>
+
+<script src="../../../js/bootstrap.bundle.min.js"></script>
+<script src="../../../js/profile.js"></script>
+</body>
+</html>
